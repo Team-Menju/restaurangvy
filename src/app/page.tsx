@@ -89,6 +89,16 @@ export default function Home() {
             >
               Se Meny
             </Link>
+            <button
+              type="button"
+              id="lunch-menu-button"
+              className="inline-flex items-center justify-center gap-2 bg-white/15 backdrop-blur-sm border-2 border-white/60 text-white px-8 py-3 rounded-full text-lg font-medium shadow-lg cursor-pointer hover:bg-white hover:text-gray-900 hover:border-white hover:-translate-y-0.5 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-400 focus-visible:ring-offset-2 focus-visible:ring-offset-transparent transition-all duration-200"
+            >
+              <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+              </svg>
+              Se Lunchmeny
+            </button>
           </div>
         </div>
       </section>
@@ -129,6 +139,29 @@ export default function Home() {
                 }}
               ></div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Dagens Lunch Section */}
+      <section className="py-20 bg-amber-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+              <h2 className="text-4xl font-bold text-gray-900 mb-6">
+                Vår Välkända Dagens
+              </h2>
+              <p className="text-lg text-gray-600 mb-6">
+                Varje vardag serverar vi en ny Dagens, inspirerad av det franska bistroköket
+                och lagad på säsongens bästa råvaror. Det är en klassisk fransk lunch,
+                tillagad med samma omsorg som våra middagsrätter.
+              </p>
+              <p className="text-lg text-gray-600">
+                Oavsett om du tar en snabb paus från kontoret eller unnar dig en lugn lunch
+                med vänner är Dagens det perfekta sättet att få en smak av Paris mitt på dagen.
+              </p>
+            </div>
+            <div id="menju-button-division" className="flex justify-center"></div>
           </div>
         </div>
       </section>

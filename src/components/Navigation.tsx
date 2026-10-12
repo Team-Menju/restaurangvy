@@ -43,6 +43,13 @@ export default function Navigation() {
                 {item.name}
               </Link>
             ))}
+            <button
+              type="button"
+              id="nav-lunch-menu-button"
+              className="text-sm font-medium text-gray-700 hover:text-amber-600 transition-colors duration-200"
+            >
+              Se Lunchmeny
+            </button>
             <Link
               href="/reservations"
               className="bg-amber-600 text-white px-4 py-2 rounded-full text-sm font-medium hover:bg-amber-700 transition-colors duration-200"
